@@ -20,6 +20,7 @@
     z-index: 2;
   }
   .Navigation .Navigation__logo {
+    font-family: 'Lobster', cursive;
     color: white;
     padding: 0 0.5rem;
   }

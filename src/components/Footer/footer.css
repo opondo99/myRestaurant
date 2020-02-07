@@ -16,7 +16,7 @@
 }
 
 .Footer .Footer__location .Footer__location__map {
-  background-image: url("../images/unnamed.png");
+  background-image: url("../images/Screenshot from 2020-02-06 11-07-51.png");
   background-size: cover;
   min-height: 50vh;
   width: 100vw;
@@ -34,6 +34,7 @@
   border-radius: 0.5rem;
   -webkit-transition: background, color 0.3s ease;
   transition: background, color 0.3s ease;
+  padding: 0.4rem 0 0 0;
 }
 
 .Footer .Footer__location a:hover {

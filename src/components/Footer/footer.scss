@@ -15,7 +15,7 @@
         position: relative;
         // top: 50vh;
         .Footer__location__map {
-            background-image: url('../images/unnamed.png');
+            background-image: url('../images/Screenshot from 2020-02-06 11-07-51.png');
             background-size: cover;
             min-height: 50vh;
             width: 100vw;
@@ -32,7 +32,7 @@
             text-decoration: none;
             border-radius: 0.5rem;
             transition: background, color 0.3s ease;
-            // padding: 0.4rem 0 0 0 ;
+            padding: 0.4rem 0 0 0 ;
         }
 
         a:hover {
@@ -41,7 +41,5 @@
             border: black;
             box-shadow: 0.5px black;
         }
-
-
     }
 }
