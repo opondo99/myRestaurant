@@ -1,0 +1,35 @@
+#Menu {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+#Menu .menu, #Menu .menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0;
+}
+
+#Menu .menu .food-item, #Menu .menu2 .food-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px dotted #3b3636;
+  padding: 0 0.5rem;
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=menu.css.map */

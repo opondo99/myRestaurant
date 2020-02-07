@@ -1,0 +1,36 @@
+.Footer {
+  min-height: 70vh;
+}
+
+.Footer .Footer__contacts {
+  background: black;
+  color: white;
+  min-height: 40vh;
+  padding: 2rem;
+}
+
+.Footer .Footer__location {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.Footer .Footer__location .Footer__location__map {
+  background-image: url("../images/unnamed.png");
+  background-size: cover;
+  min-height: 50vh;
+  width: 100vw;
+}
+
+.Footer .Footer__location a {
+  position: absolute;
+  min-height: 6vh;
+  min-width: 30vw;
+  background: black;
+  color: white;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  padding: 0.4rem 0 0 0;
+}
+/*# sourceMappingURL=footer.css.map */
