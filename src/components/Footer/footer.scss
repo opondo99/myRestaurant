@@ -23,14 +23,23 @@
 
         a {
             position: absolute;
-            min-height: 6vh;
-            min-width: 30vw;
-            background: black;
+            min-height: 4vh;
+            min-width: 20vw;
+            background: rgb(22, 20, 20);
             color: white;
-            bottom: 0;
-            right: 0;
+            bottom: 0.5rem;
+            right: 0.5rem;
             text-decoration: none;
-            padding: 0.4rem 0 0 0 ;
+            border-radius: 0.5rem;
+            transition: background, color 0.3s ease;
+            // padding: 0.4rem 0 0 0 ;
+        }
+
+        a:hover {
+            background: white;
+            color: black;
+            border: black;
+            box-shadow: 0.5px black;
         }
 
 

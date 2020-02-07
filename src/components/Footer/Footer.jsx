@@ -11,7 +11,7 @@ const Footer = () => (
         </div>
         <div className="Footer__location">
             <div className="Footer__location__map"/>
-            <a href="https://maps.app.goo.gl/zDjWd2K2M48fshbd7" target="_blank" rel="noopener noreferrer">Go to maps</a>
+            <a href="https://maps.app.goo.gl/zDjWd2K2M48fshbd7" target="_blank" rel="noopener noreferrer">Maps</a>
         </div>
     </div>
 )

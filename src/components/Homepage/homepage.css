@@ -1,10 +1,11 @@
 .Home {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  scroll-behavior: smooth;
 }
 
 .Home .Home__intro {
@@ -24,6 +25,7 @@
   min-width: 100%;
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .Home .Home__intro .Home__intro__text {

@@ -1,8 +1,9 @@
 .Home {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     transform-style: preserve-3d;
+    scroll-behavior: smooth;
 
     .Home__intro {
         position: relative;
@@ -20,6 +21,7 @@
             min-width: 100%;
             background-size: cover;
             background-position: bottom;
+            background-repeat: no-repeat;
             // opacity: 0.8;
             
         } 
