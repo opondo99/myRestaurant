@@ -1,7 +1,7 @@
 @media (max-width: 700px) {
   .Navigation {
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -20,9 +20,22 @@
     z-index: 2;
   }
   .Navigation .Navigation__logo {
-    font-family: 'Lobster', cursive;
+    font-family: 'Sriracha', cursive;
     color: white;
     padding: 0 0.5rem;
+  }
+  .Navigation .Navigation__logo h2 {
+    padding: 0;
+    margin: 0;
+    height: 9vh;
+    z-index: 3;
+  }
+  .Navigation .Navigation__logo p {
+    min-height: 5vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.37rem;
   }
   .Navigation .Navigation__spacer {
     -webkit-box-flex: 1;
@@ -37,7 +50,7 @@
 @media (min-width: 700px) {
   .Navigation {
     width: 100%;
-    height: 10vh;
+    min-height: 15vh;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,6 +66,7 @@
             align-items: center;
     background: black;
     position: fixed;
+    z-index: 2;
   }
   .Navigation .Navigation__spacer {
     -webkit-box-flex: 1;
@@ -62,6 +76,29 @@
   .Navigation .Navigation__logo {
     color: white;
     padding: 0 0.5rem;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 10vh;
+  }
+  .Navigation .Navigation__logo h2 {
+    padding: 0;
+    margin: 0;
+    min-height: 6vh;
+    z-index: 3;
+  }
+  .Navigation .Navigation__logo p {
+    height: 4vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.37rem;
   }
   .Navigation .Navigation__links {
     display: block;

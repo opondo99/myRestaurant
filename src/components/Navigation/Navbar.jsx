@@ -5,7 +5,8 @@ import './navbar.css';
 const Nav = props => (
     <div className="Navigation">
         <div className="Navigation__logo">
-            <h2>BIG MARK</h2>
+            <h2>Big Mark</h2>
+            <p>Restaurant</p>
         </div>
         <div  className="Navigation__spacer"/>
         <div>
