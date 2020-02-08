@@ -4,6 +4,7 @@
     box-sizing: border-box;
     transform-style: preserve-3d;
     scroll-behavior: smooth;
+    font-size: 1.5rem;
 
     .Home__intro {
         position: relative;
@@ -56,18 +57,79 @@
         }
 
         .Home__mini_gallery__box3 {
-            background-image: url('../images/food-plate-salad-healthy-128391.jpg');
-            min-height: 40vh;
-            min-width: 50vw;
-            background-size: cover;
-        }
-
-        .Home__mini_gallery__box4 {
             background-image: url('../images/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545.jpg');
             min-height: 40vh;
             min-width: 50vw;
             background-size: cover;
         }
 
+        .Home__mini_gallery__box4 {
+            background-image: url('../images/food-plate-salad-healthy-128391.jpg');
+            min-height: 40vh;
+            min-width: 50vw;
+            background-size: cover;
+        }
+
     }
+}
+
+@media (min-width: 700px) {
+    .Home {
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        transform-style: preserve-3d;
+        scroll-behavior: smooth;
+        font-size: 1.5rem;
+
+        .Home__intro {
+            position: relative;
+            top: 10vh;
+            min-height: 70vh;
+            min-width: 100%;
+            transform-style: inherit;
+            padding: 0;
+            margin: 0;
+
+            .Home__intro__bg {
+                background-image: url('../images/selective-focus-photography-of-open-signage-1036857.jpg');
+                min-height: 90vh;
+                min-width: 100vw;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                // opacity: 0.8;
+                
+            } 
+
+            .Home__intro__text {
+                position: absolute;
+                top: 0;
+                min-height: 90vh;
+                min-width: 100%;
+                color: white;
+                background: black;
+                opacity: .55;
+            }
+        }
+
+        .Home__mini_gallery {
+            width: 100vw;
+            min-height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto 25em)) 1fr;
+            grid-template-rows: 1fr;
+    
+            .Home__mini_gallery__box, .Home__mini_gallery__box3{
+                grid-column: span 2;
+            }
+
+            .Home__mini_gallery__box2, .Home__mini_gallery__box4 {
+                grid-column: 3/4;
+                min-width: 20vw;
+            }
+
+        }
+    }
+
 }

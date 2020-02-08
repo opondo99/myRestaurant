@@ -21,17 +21,19 @@ class Feedback extends Component {
     render() {
         return (
             <div id="Feedback">
+                <div className="Feedback__form">                
+                    <form>
+                        <textarea className="first" placeholder="first name" onChange={this.handleFirstChange} required value={this.state.first}/>
+                        <textarea className="last" placeholder="last name" onChange={this.handleLastChange} required value={this.state.last}/>
+                        <textarea className="email" placeholder="email" onChange={this.handleEmailChange} required value={this.state.email}/>
+                        <textarea className="message" placeholder="message" onChange={this.handleChange} required value={this.state.feedback}/>
+                        <input type="button" value="send" className="button" onClick={this.handleSubmit}/>
+                    </form>
+                </div>
                 <div className="Feedback__intro">
                     <h1>Feedback</h1>
                     <p>We really apprecite your feedback so dont be afraid to tell us what you think so that we can improve our services.</p>
                 </div>
-                <form>
-                    <textarea className="first" placeholder="first name" onChange={this.handleFirstChange} required value={this.state.first}/>
-                    <textarea className="last" placeholder="last name" onChange={this.handleLastChange} required value={this.state.last}/>
-                    <textarea className="email" placeholder="email" onChange={this.handleEmailChange} required value={this.state.email}/>
-                    <textarea className="message" placeholder="message" onChange={this.handleChange} required value={this.state.feedback}/>
-                    <input type="button" value="send" className="button" onClick={this.handleSubmit}/>
-                </form>
 
             </div>
         )

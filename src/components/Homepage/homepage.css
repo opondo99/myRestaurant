@@ -6,6 +6,7 @@
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   scroll-behavior: smooth;
+  font-size: 1.5rem;
 }
 
 .Home .Home__intro {
@@ -63,16 +64,75 @@
 }
 
 .Home .Home__mini_gallery .Home__mini_gallery__box3 {
-  background-image: url("../images/food-plate-salad-healthy-128391.jpg");
+  background-image: url("../images/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545.jpg");
   min-height: 40vh;
   min-width: 50vw;
   background-size: cover;
 }
 
 .Home .Home__mini_gallery .Home__mini_gallery__box4 {
-  background-image: url("../images/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545.jpg");
+  background-image: url("../images/food-plate-salad-healthy-128391.jpg");
   min-height: 40vh;
   min-width: 50vw;
   background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .Home {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    scroll-behavior: smooth;
+    font-size: 1.5rem;
+  }
+  .Home .Home__intro {
+    position: relative;
+    top: 10vh;
+    min-height: 70vh;
+    min-width: 100%;
+    -webkit-transform-style: inherit;
+            transform-style: inherit;
+    padding: 0;
+    margin: 0;
+  }
+  .Home .Home__intro .Home__intro__bg {
+    background-image: url("../images/selective-focus-photography-of-open-signage-1036857.jpg");
+    min-height: 90vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .Home .Home__intro .Home__intro__text {
+    position: absolute;
+    top: 0;
+    min-height: 90vh;
+    min-width: 100%;
+    color: white;
+    background: black;
+    opacity: .55;
+  }
+  .Home .Home__mini_gallery {
+    width: 100vw;
+    min-height: 60vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr (minmax(auto 25em))[2] 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto 25em)) 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .Home .Home__mini_gallery .Home__mini_gallery__box, .Home .Home__mini_gallery .Home__mini_gallery__box3 {
+    grid-column: span 2;
+  }
+  .Home .Home__mini_gallery .Home__mini_gallery__box2, .Home .Home__mini_gallery .Home__mini_gallery__box4 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    min-width: 20vw;
+  }
 }
 /*# sourceMappingURL=homepage.css.map */

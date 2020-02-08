@@ -53,6 +53,25 @@
         .Navigation__links {
             display: block;
             min-width: 50vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                color: white;
+                text-decoration: none;
+                min-width: 7rem;
+                background: transparent;
+                transition: background, color 0.3s ease;
+            }
+
+            a:hover {
+                background: white;
+                color: black;
+                padding: 0.3rem;
+                border-radius: 3px;
+            }
         }
     }
     

@@ -3,7 +3,7 @@
   padding: 1rem 0;
 }
 
-#Menu .menu, #Menu .menu2 {
+#Menu .menu .menu1, #Menu .menu .menu2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +14,7 @@
   padding: 1rem 0;
 }
 
-#Menu .menu .food-item, #Menu .menu2 .food-item {
+#Menu .menu .menu1 .food-item, #Menu .menu .menu2 .food-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,5 +31,39 @@
   border-bottom: 0.5px dotted #3b3636;
   padding: 0 0.5rem;
   margin: 0 1rem;
+}
+
+@media (min-width: 700px) {
+  #Menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Menu h1 {
+    display: block;
+    min-width: 90vw;
+    margin: auto;
+  }
+  #Menu .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #Menu .menu .menu1, #Menu .menu .menu2 {
+    min-width: 40vw;
+    margin: auto;
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

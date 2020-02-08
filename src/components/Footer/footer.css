@@ -17,9 +17,11 @@
 
 .Footer .Footer__location .Footer__location__map {
   background-image: url("../images/Screenshot from 2020-02-06 11-07-51.png");
-  background-size: cover;
+  background-size: inherit;
+  background-repeat: no-repeat;
   min-height: 50vh;
-  width: 100vw;
+  min-width: 100vw;
+  background-position: inherit;
 }
 
 .Footer .Footer__location a {
@@ -43,5 +45,32 @@
   border: black;
   -webkit-box-shadow: 0.5px black;
           box-shadow: 0.5px black;
+}
+
+@media (min-width: 700px) {
+  .Footer {
+    min-height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Footer .Footer__contacts {
+    min-width: 50vw;
+    padding: 0;
+    min-height: 50vh;
+  }
+  .Footer .Footer__contacts h1 {
+    padding: 2rem 0 0 0;
+  }
+  .Footer .Footer__location {
+    min-width: 50vw;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
